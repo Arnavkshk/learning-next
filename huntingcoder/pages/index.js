@@ -25,8 +25,6 @@ export default function Home() {
       </nav>
 
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-        </div>
 
         <div className={styles.center}>
           <h2>A blog for coders to hunt</h2>
