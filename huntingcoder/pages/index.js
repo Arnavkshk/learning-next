@@ -27,23 +27,26 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
 
         <div className={styles.center}>
-          <h2>A blog for coders to hunt</h2>
+          <h1>Hunting coder</h1>
         </div>
+          <p>A blog for hunting coders by a hunting coder</p>
+
         <div className="blogs">
+          <h2>Popular blogs</h2>
           <div className="blogitem">
-           <h2>how to learn javascript?</h2>
+           <h3>how to learn javascript?</h3>
            <p>javascript is the language used to design logic for the web </p> 
           </div>
         </div>
         <div className="blogs">
           <div className="blogitem">
-           <h2>how to learn javascript?</h2>
+           <h3>how to learn javascript?</h3>
            <p>javascript is the language used to design logic for the web </p> 
           </div>
         </div>
         <div className="blogs">
           <div className="blogitem">
-           <h2>how to learn javascript?</h2>
+           <h3>how to learn javascript?</h3>
            <p>javascript is the language used to design logic for the web </p> 
           </div>
         </div>
