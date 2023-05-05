@@ -18,10 +18,10 @@ export default function Home() {
       </Head>
       <nav className={styles.mainnav}>
         <ul> 
-          <Link href='/home'><li>Home</li></Link>
-          <Link href='/about'><li>About</li></Link>
-          <Link href='/blog'><li>Blog</li></Link>
-          <Link href='/contact'><li>Contact</li></Link>
+          <Link href='/home'><a><li>Home</li></a></Link>
+          <Link href='/about'><a><<li>About</li></a></Link>
+          <Link href='/blog'><a><<li>Blog</li></a></Link>
+          <Link href='/contact'><a><<li>Contact</li></a></Link>
         </ul>
       </nav>
 
