@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -18,18 +19,18 @@ export default function Home() {
       </Head>
       <nav className={styles.mainnav}>
         <ul> 
-          <Link id='link' href='/home'><li>Home</li></Link>
-          <Link id='link' href='/about'><li>About</li></Link>
-          <Link id='link' href='/blog'><li>Blog</li></Link>
-          <Link id='link' href='/contact'><li>Contact</li></Link>
+          <Link href='/'><li>Home</li></Link>
+          <Link href='/about'><li>About</li></Link>
+          <Link href='/blog'><li>Blog</li></Link>
+          <Link href='/contact'><li>Contact</li></Link>
         </ul>
       </nav>
 
       <main className={`${styles.main} ${inter.className}`}>
 
-        <div className={styles.center}>
+        
           <h1>Hunting coder</h1>
-        </div>
+      
           <p>A blog for hunting coders by a hunting coder</p>
 
         <div className="blogs">
