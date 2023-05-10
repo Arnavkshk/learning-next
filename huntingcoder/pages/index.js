@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Dummy from '../components/dummy'
+import Dummy from '../components/Dummy'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -14,8 +14,8 @@ export default function Home() {
     <Dummy/>
        <style jsx>
         {`
-          .blogs{
-            color:black;
+          .mySpan{
+            color:red;
           }
         `}
         </style>
@@ -37,29 +37,29 @@ export default function Home() {
 
       <main className={`${styles.main} ${inter.className}`}>
        
-          <h1>Hunting coder</h1>
-          <p>A blog for hunting coders by a hunting coder</p>
+          <h1 className="mySpan">Hunting coder</h1>
         <div className="blogs">
+          <p>A blog for hunting coders by a hunting coder</p><br/>
+         
           <h2>Popular blogs</h2>
+         
           <div className="blogitem">
            <h3>how to learn javascript?</h3>
            <p>javascript is the language used to design logic for the web </p> 
           </div>
-        </div>
-        <div className="blogs">
-          <div className="blogitem">
-           <h3>how to learn javascript?</h3>
-           <p>javascript is the language used to design logic for the web </p> 
-          </div>
-        </div>
-        <div className="blogs">
-          <div className="blogitem">
-           <h3>how to learn javascript?</h3>
-           <p>javascript is the language used to design logic for the web </p> 
-          </div>
-        </div>
        
+          <div className="blogitem">
+           <h3>how to learn javascript?</h3>
+           <p>javascript is the language used to design logic for the web </p> 
+          </div>
+        
+       
+          <div className="blogitem">
+           <h3>how to learn javascript?</h3>
+           <p>javascript is the language used to design logic for the web </p> 
+          </div>
+        </div>
       </main>
     </>
-  )
-}
+    )
+  }
