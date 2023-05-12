@@ -37,7 +37,7 @@ export default function Home() {
 
       <main className={`${styles.main} ${inter.className}`}>
        
-          <h1 className="mySpan">Hunting coder</h1>
+          <h1 className="mySpan dummy">Hunting coder</h1>
         <div className="blogs">
           <p>A blog for hunting coders by a hunting coder</p><br/>
          

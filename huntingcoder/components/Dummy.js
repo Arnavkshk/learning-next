@@ -3,11 +3,14 @@ import React from 'react'
 const Dummy = () => {
   return (
     <>
-      <style jsx>
+      <style jsx global>
         {`
+        .dummy{
+          background:yellow;
+        }
         `}
       </style>
-    <div>
+    <div className='dummy'>
       im dummy
     </div>
   </>
