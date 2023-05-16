@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
@@ -12,7 +11,12 @@ export default function Home() {
     <>
     <style jsx>
       {`
-      
+      h2{
+        font-size:30px;
+      }
+      h3{
+        font-size:20px;
+      }
       `}
     </style>
       <Head>
@@ -22,34 +26,29 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className={styles.mainnav}>
-        <ul> 
-          <Link href='/'><li>Home</li></Link>
-          <Link href='/about'><li>About</li></Link>
-          <Link href='/blog'><li>Blog</li></Link>
-          <Link href='/contact'><li>Contact</li></Link>
-        </ul>
-      </nav>
+     
 
       <main className={`${styles.main} ${inter.className}`}>
        
           <h1 className="mySpan dummy">Hunting coder</h1>
+          <div className={styles.imagewrap}>
           <Image className={styles.myimg} src="/coder.jpg" width={210} height={120}/>
+          </div>
         <div className="blogs">
           <p>A blog for hunting coders by a hunting coder</p><br/>
          
-          <h2>Popular blogs</h2>
+          <h2>Latest blogs</h2>
          
-          <div className="blogitem">
+          <div className={styles.blogpost}>
            <h3>how to learn javascript?</h3>
            <p>javascript is the language used to design logic for the web </p> 
           </div>
        
-          <div className="blogitem">
+          <div className={styles.blogpost}>
            <h3>how to learn javascript?</h3>
            <p>javascript is the language used to design logic for the web </p> 
           </div>
-          <div className="blogitem">
+          <div className={styles.blogpost}>
            <h3>how to learn javascript?</h3>
            <p>javascript is the language used to design logic for the web </p> 
           </div>
